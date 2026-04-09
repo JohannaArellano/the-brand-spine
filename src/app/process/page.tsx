@@ -85,7 +85,7 @@ export default function ProcessPage() {
                 <p className="text-lg leading-relaxed">
                   The Brand Spine makes that implicit governance explicit. We
                   extract it through guided work, pressure-test it until it
-                  holds, lock it down, and then encode it into BrandOSâan
+                  holds, lock it down, and then encode it into BrandOS--an
                   operating system that makes the architecture operational
                   across your team.
                 </p>
@@ -141,15 +141,15 @@ export default function ProcessPage() {
                       </h4>
                       <ul className="font-sans text-brand-gray-300 space-y-2">
                         <li className="flex items-start gap-3">
-                          <span className="text-brand-gold">â</span>
+                          <span className="text-brand-gold"></span>
                           <span>Factual landscape mapping</span>
                         </li>
                         <li className="flex items-start gap-3">
-                          <span className="text-brand-gold">â</span>
+                          <span className="text-brand-gold"></span>
                           <span>Voice sample analysis</span>
                         </li>
                         <li className="flex items-start gap-3">
-                          <span className="text-brand-gold">â</span>
+                          <span className="text-brand-gold"></span>
                           <span>Preparation for extraction sessions</span>
                         </li>
                       </ul>
@@ -204,15 +204,15 @@ export default function ProcessPage() {
                       </h4>
                       <ul className="font-sans text-brand-cream space-y-2">
                         <li className="flex items-start gap-3">
-                          <span className="text-brand-gold">â</span>
+                          <span className="text-brand-gold"></span>
                           <span>Raw governance material</span>
                         </li>
                         <li className="flex items-start gap-3">
-                          <span className="text-brand-gold">â</span>
+                          <span className="text-brand-gold"></span>
                           <span>Decision patterns and logic</span>
                         </li>
                         <li className="flex items-start gap-3">
-                          <span className="text-brand-gold">â</span>
+                          <span className="text-brand-gold"></span>
                           <span>Priority signals and voice patterns</span>
                         </li>
                       </ul>
@@ -267,15 +267,15 @@ export default function ProcessPage() {
                       </h4>
                       <ul className="font-sans text-brand-gray-300 space-y-2">
                         <li className="flex items-start gap-3">
-                          <span className="text-brand-gold">â</span>
+                          <span className="text-brand-gold"></span>
                           <span>Validated governance architecture</span>
                         </li>
                         <li className="flex items-start gap-3">
-                          <span className="text-brand-gold">â</span>
+                          <span className="text-brand-gold"></span>
                           <span>Stress-tested decision hierarchy</span>
                         </li>
                         <li className="flex items-start gap-3">
-                          <span className="text-brand-gold">â</span>
+                          <span className="text-brand-gold"></span>
                           <span>Identified drift vectors and edge cases</span>
                         </li>
                       </ul>
@@ -331,15 +331,15 @@ export default function ProcessPage() {
                       </h4>
                       <ul className="font-sans text-brand-gray-300 space-y-2">
                         <li className="flex items-start gap-3">
-                          <span className="text-brand-gold">â</span>
+                          <span className="text-brand-gold"></span>
                           <span>Finalized Brand Spine document</span>
                         </li>
                         <li className="flex items-start gap-3">
-                          <span className="text-brand-gold">â</span>
+                          <span className="text-brand-gold"></span>
                           <span>BrandOS deployed in three tiers</span>
                         </li>
                         <li className="flex items-start gap-3">
-                          <span className="text-brand-gold">â</span>
+                          <span className="text-brand-gold"></span>
                           <span>Printed Field Guide for team</span>
                         </li>
                       </ul>
