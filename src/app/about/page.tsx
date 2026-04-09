@@ -29,7 +29,7 @@ const aboutFAQs = [
   {
     question: "What makes the Brand Spine different from a brand refresh?",
     answer:
-      "A brand refresh updates visual identity. The Brand Spine builds governance architectureâthe decision framework that makes your authority compound instead of fracture. It defines how you think, decide, and protect what you stand for as you scale.",
+      "A brand refresh updates visual identity. The Brand Spine builds governance architecture--the decision framework that makes your authority compound instead of fracture. It defines how you think, decide, and protect what you stand for as you scale.",
   },
   {
     question: "Do I need to have a team to work with you?",
@@ -123,8 +123,8 @@ export default function AboutPage() {
               Jo spent years at McCann as a Senior VP, learning best practices
               for strategy, positioning, communication, and branding for Fortune
               500 companies. The infrastructure that keeps a global brand
-              coherent across markets and leadership changesâdecision frameworks,
-              governance systems, positioning enginesâexisted, but only at
+              coherent across markets and leadership changes--decision frameworks,
+              governance systems, positioning engines--existed, but only at
               enterprise scale.
             </p>
 
@@ -151,8 +151,8 @@ export default function AboutPage() {
             <div className="border-l-2 border-brand-gold/30 pl-6 py-6">
               <p className="font-sans text-lg text-brand-cream leading-relaxed">
                 The Brand Spine takes the strategic rigor of enterprise-level
-                governanceâthe kind of decision rules that keep a global brand
-                coherent across thousands of choicesâand applies it to leaders
+                governance--the kind of decision rules that keep a global brand
+                coherent across thousands of choices--and applies it to leaders
                 who are scaling, clarifying what they stand for, or building a
                 team that needs to understand their thinking. Not a simplified
                 version. A purpose-built version for how scaling leaders
@@ -186,7 +186,7 @@ export default function AboutPage() {
               <div className="space-y-6">
                 <p className="font-sans text-lg text-brand-gray-300 leading-relaxed">
                   We start by listening. Your voice, your decision patterns, your
-                  actual prioritiesânot the ones you think you should have. We
+                  actual priorities--not the ones you think you should have. We
                   extract the governance logic that already exists in how you
                   operate, then we pressure-test it against real scenarios.
                 </p>
@@ -289,7 +289,7 @@ export default function AboutPage() {
           <AnimatedSection delay={0.4} className="mt-16">
             <GlassCard>
               <p className="font-sans text-lg text-brand-gray-300 leading-relaxed text-center">
-                BrandOS â the AI operating system that puts governance architecture to work across three operational tiers â represents the evolution of the Brand Spine methodology into technology. Deployed across Claude, ChatGPT, and Gemini.
+                BrandOS -- the AI operating system that puts governance architecture to work across three operational tiers -- represents the evolution of the Brand Spine methodology into technology. Deployed across Claude, ChatGPT, and Gemini.
               </p>
             </GlassCard>
           </AnimatedSection>
