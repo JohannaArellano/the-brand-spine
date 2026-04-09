@@ -5,7 +5,7 @@ import { useRouter } from 'next/navigation';
 import { motion } from 'framer-motion';
 import AnimatedSection from '@/components/AnimatedSection';
 import SectionHeading from '@/components/SectionHeading';
-import GlassCard from 'A/components/GlassCard';
+import GlassCard from '@/components/GlassCard';
 
 type GovernancePosition = 'Sovereign' | 'Partner' | 'Influencer' | 'Subordinate' | null;
 type FrictionType = string;
