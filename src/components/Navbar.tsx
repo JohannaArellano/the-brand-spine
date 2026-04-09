@@ -39,7 +39,7 @@ export default function Navbar() {
             {/* Logo */}
             <Link href="/" className="flex items-center">
               <span className="text-sm font-sans font-semibold tracking-widest text-white hover:text-[#c9a96e] transition-colors">
-                THE BRAND SPINE™
+                THE BRAND SPINE
               </span>
             </Link>
 
