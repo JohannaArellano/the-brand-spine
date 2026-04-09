@@ -29,7 +29,7 @@ const faqData = [
   },
   {
     question: 'Who is this for?',
-    answer: 'Leaders, founders, and teams navigating increasing complexity as they scale. If your authority is fragmenting â misaligned commitments, inconsistent positioning, team members improvising your brand â this is the infrastructure that prevents it.',
+    answer: 'Leaders, founders, and teams navigating increasing complexity as they scale. If your authority is fragmenting Ã¢ÂÂ misaligned commitments, inconsistent positioning, team members improvising your brand Ã¢ÂÂ this is the infrastructure that prevents it.',
   },
   {
     question: 'What does the engagement look like?',
@@ -37,23 +37,31 @@ const faqData = [
   },
 ];
 
-export default function Home() {
-  const schemaMarkup = {
-    '@context': 'https://schema.org',
-    '@graph': [
-      professionalServiceSchema(),
-      faqSchema(faqData),
-      webPageSchema('The Brand Spine | Identity Governance for Scaling Leaders', 'We build the governance architecture that defines how you think, decide, and protect authority.', 'https://thebrandspine.com'),
-      breadcrumbSchema([{ name: 'Home', url: 'https://thebrandspine.com' }]),
-    ],
-  };
+const schemaMarkup = {
+  "@context": "https://schema.org",
+  "@graph": [
+    professionalServiceSchema(),
+    faqSchema(faqData),
+    webPageSchema(
+      "The Brand Spine | Identity Governance for Scaling Leaders",
+      "We build the governance architecture that defines how you think, decide, and protect authority.",
+      "https://thebrandspine.com"
+    ),
+    breadcrumbSchema([{ name: "Home", url: "https://thebrandspine.com" }]),
+  ],
+};
 
+export default function Home() {
   return (
     <>
-      <Script id="home-schema"
+      <Script
+        id="home-schema"
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaMarkup) }}
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(schemaMarkup),
+        }}
       />
+
 
       <AnimatedSection className="relative min-h-screen flex items-center justify-center overflow-hidden pt-32 pb-20">
         <div className="absolute inset-0 bg-radial-gold opacity-20 pointer-events-none" />
@@ -86,7 +94,7 @@ export default function Home() {
                   href="/assessment"
                   className="inline-flex items-center justify-center px-8 py-4 border border-gold/50 hover:border-gold text-gold hover:bg-gold/5 font-semibold transition-colors duration-200"
                 >
-                  Take the Governance Assessment â
+                  Take the Governance Assessment Ã¢ÂÂ
                 </Link>
               </div>
             </div>
@@ -191,7 +199,7 @@ export default function Home() {
           <GlassCard className="p-8 flex flex-col h-full">
             <div className="text-4xl font-light text-gold mb-6">03</div>
             <h3 className="text-2xl font-serif mb-4">
-              Brand<span className="text-gold">OS</span>â¢
+              Brand<span className="text-gold">OS</span>Ã¢ÂÂ¢
             </h3>
             <p className="text-neutral-300 leading-relaxed flex-grow mb-6">
               An AI-powered operating system that puts your governance architecture to work in real time.
@@ -200,7 +208,7 @@ export default function Home() {
               and flags priority conflicts before they reach your inbox.
             </p>
             <Link href="/brandos" className="text-gold hover:text-gold/80 font-medium transition-colors">
-              Learn more about BrandOS â
+              Learn more about BrandOS Ã¢ÂÂ
             </Link>
           </GlassCard>
         </div>
@@ -286,7 +294,7 @@ export default function Home() {
 
         <div className="mt-16">
           <Link href="/process" className="text-gold hover:text-gold/80 font-medium transition-colors text-lg">
-            See the full process â
+            See the full process Ã¢ÂÂ
           </Link>
         </div>
       </AnimatedSection>
@@ -316,23 +324,23 @@ export default function Home() {
             <h3 className="text-2xl font-serif text-gold mb-8">For You If</h3>
             <ul className="space-y-4 text-neutral-300">
               <li className="flex gap-3">
-                <span className="text-gold flex-shrink-0 mt-1">â¢</span>
+                <span className="text-gold flex-shrink-0 mt-1">Ã¢ÂÂ¢</span>
                 <span>You're scaling visibility or influence and feeling things start to pull apart</span>
               </li>
               <li className="flex gap-3">
-                <span className="text-gold flex-shrink-0 mt-1">â¢</span>
+                <span className="text-gold flex-shrink-0 mt-1">Ã¢ÂÂ¢</span>
                 <span>You're navigating decisions where multiple priorities collide</span>
               </li>
               <li className="flex gap-3">
-                <span className="text-gold flex-shrink-0 mt-1">â¢</span>
+                <span className="text-gold flex-shrink-0 mt-1">Ã¢ÂÂ¢</span>
                 <span>You're open to being challenged on how you think, not just what you produce</span>
               </li>
               <li className="flex gap-3">
-                <span className="text-gold flex-shrink-0 mt-1">â¢</span>
+                <span className="text-gold flex-shrink-0 mt-1">Ã¢ÂÂ¢</span>
                 <span>You value structure over aesthetics and direction over decoration</span>
               </li>
               <li className="flex gap-3">
-                <span className="text-gold flex-shrink-0 mt-1">â¢</span>
+                <span className="text-gold flex-shrink-0 mt-1">Ã¢ÂÂ¢</span>
                 <span>You want your authority to hold under pressure, not just in calm</span>
               </li>
             </ul>
@@ -342,23 +350,23 @@ export default function Home() {
             <h3 className="text-2xl font-serif text-neutral-400 mb-8">Not For You If</h3>
             <ul className="space-y-4 text-neutral-500">
               <li className="flex gap-3">
-                <span className="flex-shrink-0 mt-1">â¢</span>
+                <span className="flex-shrink-0 mt-1">Ã¢ÂÂ¢</span>
                 <span>You want faster growth without governance constraints</span>
               </li>
               <li className="flex gap-3">
-                <span className="flex-shrink-0 mt-1">â¢</span>
+                <span className="flex-shrink-0 mt-1">Ã¢ÂÂ¢</span>
                 <span>You're looking for content strategy or social media management</span>
               </li>
               <li className="flex gap-3">
-                <span className="flex-shrink-0 mt-1">â¢</span>
+                <span className="flex-shrink-0 mt-1">Ã¢ÂÂ¢</span>
                 <span>You want branding that optimizes for attention, not alignment</span>
               </li>
               <li className="flex gap-3">
-                <span className="flex-shrink-0 mt-1">â¢</span>
+                <span className="flex-shrink-0 mt-1">Ã¢ÂÂ¢</span>
                 <span>You prioritize expansion speed over decision discipline</span>
               </li>
               <li className="flex gap-3">
-                <span className="flex-shrink-0 mt-1">â¢</span>
+                <span className="flex-shrink-0 mt-1">Ã¢ÂÂ¢</span>
                 <span>You're not ready to have your assumptions examined</span>
               </li>
             </ul>
