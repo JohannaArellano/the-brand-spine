@@ -137,8 +137,8 @@ export default function BrandosPage() {
     { name: 'BrandOS', url: 'https://thebrandspine.com/brandos' },
   ]);
   const webPageData = webPageSchema(
-    metadataContent.title,
-    metadataContent.description,
+    'BrandOS | The Brand Spine',
+    'BrandOS is the operating system for your brand identity. Governance architecture that scales with your leadership.',
     'https://thebrandspine.com/brandos'
   );
 
