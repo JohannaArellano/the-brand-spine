@@ -27,7 +27,7 @@ const faqData = [
   },
   {
     question: 'Who is this for?',
-    answer: 'Leaders, founders, and teams navigating increasing complexity as they scale. If your authority is fragmenting ÃÂ¢ÃÂÃÂ misaligned commitments, inconsistent positioning, team members improvising your brand ÃÂ¢ÃÂÃÂ this is the infrastructure that prevents it.',
+    answer: 'Leaders, founders, and teams navigating increasing complexity as they scale. If your authority is fragmenting  misaligned commitments, inconsistent positioning, team members improvising your brand  this is the infrastructure that prevents it.',
   },
   {
     question: 'What does the engagement look like?',
@@ -72,7 +72,7 @@ export default function Home() {
                   href="/assessment"
                   className="inline-flex items-center justify-center px-8 py-4 border border-gold/50 hover:border-gold text-gold hover:bg-gold/5 font-semibold transition-colors duration-200"
                 >
-                  Take the Governance Assessment ÃÂ¢ÃÂÃÂ
+                  Take the Governance Assessment 
                 </Link>
               </div>
             </div>
@@ -177,7 +177,7 @@ export default function Home() {
           <GlassCard className="p-8 flex flex-col h-full">
             <div className="text-4xl font-light text-gold mb-6">03</div>
             <h3 className="text-2xl font-serif mb-4">
-              Brand<span className="text-gold">OS</span>ÃÂ¢ÃÂÃÂ¢
+              Brand<span className="text-gold">OS</span>
             </h3>
             <p className="text-neutral-300 leading-relaxed flex-grow mb-6">
               An AI-powered operating system that puts your governance architecture to work in real time.
@@ -186,7 +186,7 @@ export default function Home() {
               and flags priority conflicts before they reach your inbox.
             </p>
             <Link href="/brandos" className="text-gold hover:text-gold/80 font-medium transition-colors">
-              Learn more about BrandOS ÃÂ¢ÃÂÃÂ
+              Learn more about BrandOS 
             </Link>
           </GlassCard>
         </div>
@@ -272,7 +272,7 @@ export default function Home() {
 
         <div className="mt-16">
           <Link href="/process" className="text-gold hover:text-gold/80 font-medium transition-colors text-lg">
-            See the full process ÃÂ¢ÃÂÃÂ
+            See the full process 
           </Link>
         </div>
       </AnimatedSection>
@@ -302,23 +302,23 @@ export default function Home() {
             <h3 className="text-2xl font-serif text-gold mb-8">For You If</h3>
             <ul className="space-y-4 text-neutral-300">
               <li className="flex gap-3">
-                <span className="text-gold flex-shrink-0 mt-1">ÃÂ¢ÃÂÃÂ¢</span>
+                <span className="text-gold flex-shrink-0 mt-1"></span>
                 <span>You're scaling visibility or influence and feeling things start to pull apart</span>
               </li>
               <li className="flex gap-3">
-                <span className="text-gold flex-shrink-0 mt-1">ÃÂ¢ÃÂÃÂ¢</span>
+                <span className="text-gold flex-shrink-0 mt-1"></span>
                 <span>You're navigating decisions where multiple priorities collide</span>
               </li>
               <li className="flex gap-3">
-                <span className="text-gold flex-shrink-0 mt-1">ÃÂ¢ÃÂÃÂ¢</span>
+                <span className="text-gold flex-shrink-0 mt-1"></span>
                 <span>You're open to being challenged on how you think, not just what you produce</span>
               </li>
               <li className="flex gap-3">
-                <span className="text-gold flex-shrink-0 mt-1">ÃÂ¢ÃÂÃÂ¢</span>
+                <span className="text-gold flex-shrink-0 mt-1"></span>
                 <span>You value structure over aesthetics and direction over decoration</span>
               </li>
               <li className="flex gap-3">
-                <span className="text-gold flex-shrink-0 mt-1">ÃÂ¢ÃÂÃÂ¢</span>
+                <span className="text-gold flex-shrink-0 mt-1"></span>
                 <span>You want your authority to hold under pressure, not just in calm</span>
               </li>
             </ul>
@@ -328,23 +328,23 @@ export default function Home() {
             <h3 className="text-2xl font-serif text-neutral-400 mb-8">Not For You If</h3>
             <ul className="space-y-4 text-neutral-500">
               <li className="flex gap-3">
-                <span className="flex-shrink-0 mt-1">ÃÂ¢ÃÂÃÂ¢</span>
+                <span className="flex-shrink-0 mt-1"></span>
                 <span>You want faster growth without governance constraints</span>
               </li>
               <li className="flex gap-3">
-                <span className="flex-shrink-0 mt-1">ÃÂ¢ÃÂÃÂ¢</span>
+                <span className="flex-shrink-0 mt-1"></span>
                 <span>You're looking for content strategy or social media management</span>
               </li>
               <li className="flex gap-3">
-                <span className="flex-shrink-0 mt-1">ÃÂ¢ÃÂÃÂ¢</span>
+                <span className="flex-shrink-0 mt-1"></span>
                 <span>You want branding that optimizes for attention, not alignment</span>
               </li>
               <li className="flex gap-3">
-                <span className="flex-shrink-0 mt-1">ÃÂ¢ÃÂÃÂ¢</span>
+                <span className="flex-shrink-0 mt-1"></span>
                 <span>You prioritize expansion speed over decision discipline</span>
               </li>
               <li className="flex gap-3">
-                <span className="flex-shrink-0 mt-1">ÃÂ¢ÃÂÃÂ¢</span>
+                <span className="flex-shrink-0 mt-1"></span>
                 <span>You're not ready to have your assumptions examined</span>
               </li>
             </ul>
