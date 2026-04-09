@@ -18,7 +18,7 @@ const brandosFaqData = [
   {
     question: 'How does BrandOS work across multiple AI platforms?',
     answer:
-      'Your governance architecture is platform-agnostic. Once defined in your Brand Spine, BrandOS creates specific implementations for each platform you useÃ¢ÂÂClaude, ChatGPT, GeminiÃ¢ÂÂso your decision logic and voice remain consistent everywhere.',
+      'Your governance architecture is platform-agnostic. Once defined in your Brand Spine, BrandOS creates specific implementations for each platform you useClaude, ChatGPT, Geminiso your decision logic and voice remain consistent everywhere.',
   },
   {
     question: 'What is drift detection and why does it matter?',
@@ -79,7 +79,7 @@ const teamCapabilitiesData = [
   {
     title: 'Voice-Consistent Content Generation',
     description:
-      'Your team generates content that carries your voice without requiring your presence. Tone, perspective, priority rankingÃ¢ÂÂall baked in. Quality is consistent. The leader\'s voice doesn\'t fade when they\'re not in the room.',
+      'Your team generates content that carries your voice without requiring your presence. Tone, perspective, priority rankingall baked in. Quality is consistent. The leader\'s voice doesn\'t fade when they\'re not in the room.',
   },
 ];
 
