@@ -1,6 +1,7 @@
 import { Metadata } from 'next'
 import Link from 'next/link'
 import AnimatedSection from '@/components/AnimatedSection'
+import Script from 'next/script'
 import SectionHeading from '@/components/SectionHeading'
 import GlassCard from '@/components/GlassCard'
 import MarqueeTicker from '@/components/MarqueeTicker'
