@@ -49,7 +49,7 @@ export default function Home() {
 
   return (
     <>
-      <script
+      <Script id="home-schema"
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaMarkup) }}
       />
