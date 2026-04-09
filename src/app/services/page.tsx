@@ -18,7 +18,7 @@ const servicesFaqData = [
   {
     question: 'What happens during The Brand Spine facilitation process?',
     answer:
-      'We conduct facilitated sessions designed to extract your actual decision patterns under real pressure. This isn\'t self-assessment or aspirationÃ¢ÂÂit\'s evidence-based. We observe how you lead, what trade-offs you make, and where your real priorities sit.',
+      'We conduct facilitated sessions designed to extract your actual decision patterns under real pressure. This isn\'t self-assessment or aspirationit\'s evidence-based. We observe how you lead, what trade-offs you make, and where your real priorities sit.',
   },
   {
     question: 'Can BrandOS work with multiple AI platforms?',
@@ -111,7 +111,7 @@ export default function ServicesPage() {
     'A governance document that captures how you actually think, decide, and lead, extracted from real behavior under real pressure.'
   );
   const brandosSchema = serviceSchema(
-    'BrandOSÃ¢ÂÂ¢: Your AI-Powered Operating System',
+    'BrandOS: Your AI-Powered Operating System',
     'An AI-powered operating system that encodes your governance architecture into decision support, drift detection, and voice execution across Claude, ChatGPT, and Gemini.'
   );
   const breadcrumbData = breadcrumbSchema([
@@ -214,7 +214,7 @@ export default function ServicesPage() {
             <AnimatedSection>
               <SectionHeading
                 eyebrow="SERVICE 02"
-                title="BrandOSÃ¢ÂÂ¢: Your AI-Powered Operating System"
+                title="BrandOS: Your AI-Powered Operating System"
                 className="mb-12"
               />
 
@@ -292,19 +292,19 @@ export default function ServicesPage() {
                   <h3 className="font-serif text-lg text-brand-gold mb-4">What We Won't Replace</h3>
                   <ul className="space-y-3 font-sans text-brand-gray-300">
                     <li className="flex items-start gap-3">
-                      <span className="text-brand-gold mt-1">Ã¢ÂÂ¢</span>
+                      <span className="text-brand-gold mt-1"></span>
                       <span>Your branding agency</span>
                     </li>
                     <li className="flex items-start gap-3">
-                      <span className="text-brand-gold mt-1">Ã¢ÂÂ¢</span>
+                      <span className="text-brand-gold mt-1"></span>
                       <span>Your marketing team</span>
                     </li>
                     <li className="flex items-start gap-3">
-                      <span className="text-brand-gold mt-1">Ã¢ÂÂ¢</span>
+                      <span className="text-brand-gold mt-1"></span>
                       <span>Your content strategy</span>
                     </li>
                     <li className="flex items-start gap-3">
-                      <span className="text-brand-gold mt-1">Ã¢ÂÂ¢</span>
+                      <span className="text-brand-gold mt-1"></span>
                       <span>Your visual identity</span>
                     </li>
                   </ul>
@@ -314,19 +314,19 @@ export default function ServicesPage() {
                   <h3 className="font-serif text-lg text-brand-gold mb-4">What It Will Define</h3>
                   <ul className="space-y-3 font-sans text-brand-gray-300">
                     <li className="flex items-start gap-3">
-                      <span className="text-brand-gold mt-1">Ã¢ÂÂ¢</span>
+                      <span className="text-brand-gold mt-1"></span>
                       <span>The rules your team follows</span>
                     </li>
                     <li className="flex items-start gap-3">
-                      <span className="text-brand-gold mt-1">Ã¢ÂÂ¢</span>
+                      <span className="text-brand-gold mt-1"></span>
                       <span>The logic behind your decisions</span>
                     </li>
                     <li className="flex items-start gap-3">
-                      <span className="text-brand-gold mt-1">Ã¢ÂÂ¢</span>
+                      <span className="text-brand-gold mt-1"></span>
                       <span>The drift signals worth watching for</span>
                     </li>
                     <li className="flex items-start gap-3">
-                      <span className="text-brand-gold mt-1">Ã¢ÂÂ¢</span>
+                      <span className="text-brand-gold mt-1"></span>
                       <span>The governance architecture that makes all of that work</span>
                     </li>
                   </ul>
