@@ -124,7 +124,7 @@ const QUESTIONS: Question[] = [
       { position: 'Sovereign', friction: 'friction' },
       { position: 'Partner', friction: 'overcorrecting' },
       { position: 'Influencer', friction: 'aligned' },
-      { position: 'Subordinate', friction: 'compliance' },
+      { position: 'Subordinate', friction: 'compliant' },
     ],
   },
   {
