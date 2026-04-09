@@ -4,6 +4,7 @@ import AnimatedSection from '@/components/AnimatedSection'
 import GlassCard from '@/components/GlassCard'
 import { getAllPosts, getPostBySlug, getPostsByCategory } from '@/lib/blog'
 import { articleSchema, breadcrumbSchema, personSchema, faqSchema } from '@/lib/schema'
+import Script from 'next/script'
 
 export async function generateStaticParams() {
   const posts = getAllPosts()
@@ -135,10 +136,10 @@ export default function ArticlePage({ params }: { params: { slug: string } }) {
 
   return (
     <>
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchemaData) }} />
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(personSchemaData) }} />
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchemaData) }} />
-      {faqSchemaData && <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchemaData) }} />}
+      <Script id="insight-post-schema" type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchemaData) }} />
+      <Script id="insight-post-schema" type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(personSchemaData) }} />
+      <Script id="insight-post-schema" type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchemaData) }} />
+      {faqSchemaData && <Script id="insight-post-schema" type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchemaData) }} />}
 
       <main>
         {/* Article Header */}

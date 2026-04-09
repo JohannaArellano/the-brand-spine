@@ -6,6 +6,7 @@ import AnimatedSection from '@/components/AnimatedSection'
 import SectionHeading from '@/components/SectionHeading'
 import GlassCard from '@/components/GlassCard'
 import { webPageSchema } from '@/lib/schema'
+import Script from 'next/script'
 
 interface FormData {
   name: string
@@ -69,7 +70,7 @@ export default function ContactPage() {
 
   return (
     <>
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaData) }} />
+      <Script id="contact-schema" type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaData) }} />
 
       <main>
         {/* Hero Section */}
@@ -223,7 +224,7 @@ export default function ContactPage() {
               >
                 jo@thebrandspine.com
               </a>
-              <span className="text-gray-500 hidden md:block">Â·</span>
+              <span className="text-gray-500 hidden md:block">ÃÂ·</span>
               <a
                 href="mailto:brett@thebrandspine.com"
                 className="text-[#c9a96e] hover:underline font-medium"

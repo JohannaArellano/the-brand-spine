@@ -7,6 +7,7 @@ import SectionHeading from '@/components/SectionHeading';
 import GlassCard from '@/components/GlassCard';
 import FAQ from '@/components/FAQ';
 import { faqSchema, breadcrumbSchema, webPageSchema } from '@/lib/schema';
+import Script from 'next/script'
 
 const brandosFaqData = [
   {
@@ -17,7 +18,7 @@ const brandosFaqData = [
   {
     question: 'How does BrandOS work across multiple AI platforms?',
     answer:
-      'Your governance architecture is platform-agnostic. Once defined in your Brand Spine, BrandOS creates specific implementations for each platform you useâClaude, ChatGPT, Geminiâso your decision logic and voice remain consistent everywhere.',
+      'Your governance architecture is platform-agnostic. Once defined in your Brand Spine, BrandOS creates specific implementations for each platform you useÃ¢ÂÂClaude, ChatGPT, GeminiÃ¢ÂÂso your decision logic and voice remain consistent everywhere.',
   },
   {
     question: 'What is drift detection and why does it matter?',
@@ -78,7 +79,7 @@ const teamCapabilitiesData = [
   {
     title: 'Voice-Consistent Content Generation',
     description:
-      'Your team generates content that carries your voice without requiring your presence. Tone, perspective, priority rankingâall baked in. Quality is consistent. The leader\'s voice doesn\'t fade when they\'re not in the room.',
+      'Your team generates content that carries your voice without requiring your presence. Tone, perspective, priority rankingÃ¢ÂÂall baked in. Quality is consistent. The leader\'s voice doesn\'t fade when they\'re not in the room.',
   },
 ];
 
@@ -143,9 +144,9 @@ export default function BrandosPage() {
 
   return (
     <>
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema_data) }} />
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(webPageData) }} />
+      <Script id="brandos-schema" type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema_data) }} />
+      <Script id="brandos-schema" type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
+      <Script id="brandos-schema" type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(webPageData) }} />
 
       <div className="min-h-screen bg-brand-black text-brand-cream">
         {/* Hero Section */}
