@@ -28,14 +28,14 @@ export default function Footer() {
           <div className="flex flex-col space-y-4">
             <Link href="/" className="inline-block w-fit">
               <span className="text-sm font-sans font-semibold tracking-widest text-white hover:text-[#c9a96e] transition-colors">
-                THE BRAND SPINE™
+                THE BRAND SPINE
               </span>
             </Link>
             <p className="text-sm font-sans text-white/60">
               Identity Governance for Scaling Leaders
             </p>
             <p className="text-xs font-sans text-white/40 mt-6">
-              © {currentYear} The Brand Spine. All rights reserved.
+               {currentYear} The Brand Spine. All rights reserved.
             </p>
           </div>
 
