@@ -27,7 +27,7 @@ interface FrictionPoint {
 const POSTURE_DESCRIPTIONS: Record<GovernancePosition, string> = {
   Sovereign: "You lead with decisive clarity. When you hold authority, decisions are made efficiently and expectations are clear. Your team rarely wonders where you stand.",
   Partner: "You lead through collaboration. Shared decision-making, mutual input, and co-creation are your default operating mode. You build buy-in before you build momentum.",
-  Influencer: "You lead through calibrated influence. You shape outcomes indirectly â through questions, reframing, and strategic positioning rather than direct authority.",
+  Influencer: "You lead through calibrated influence. You shape outcomes indirectly -- through questions, reframing, and strategic positioning rather than direct authority.",
   Subordinate: "You lead by creating space. You defer to context, prioritize relationships, and avoid unnecessary friction. Your leadership shows up in restraint rather than assertion.",
 };
 
@@ -121,7 +121,7 @@ export default function ResultsPage() {
           <div className="mb-16">
             <SectionHeading>Your Governance Friction Report</SectionHeading>
             <p className="text-lg text-gray-400 mt-6">
-              Here is where your leadership style creates friction â and where it thrives.
+              Here is where your leadership style creates friction -- and where it thrives.
             </p>
           </div>
 
