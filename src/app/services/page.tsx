@@ -119,8 +119,8 @@ export default function ServicesPage() {
     { name: 'Services', url: 'https://thebrandspine.com/services' },
   ]);
   const webPageData = webPageSchema(
-    metadataContent.title,
-    metadataContent.description,
+    'Services | The Brand Spine',
+    'Identity governance services for scaling leaders. We build the architecture that defines how your brand thinks, decides, and communicates.',
     'https://thebrandspine.com/services'
   );
 
