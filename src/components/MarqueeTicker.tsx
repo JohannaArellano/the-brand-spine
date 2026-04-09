@@ -59,7 +59,7 @@ export default function MarqueeTicker({
               <span className="font-sans text-sm uppercase tracking-[0.2em] text-brand-gray-300">
                 {item}
               </span>
-              <span className="text-brand-gold">•</span>
+              <span className="text-brand-gold">*</span>
             </React.Fragment>
           ))}
         </div>
@@ -73,7 +73,7 @@ export default function MarqueeTicker({
               <span className="font-sans text-sm uppercase tracking-[0.2em] text-brand-gray-300">
                 {item}
               </span>
-              <span className="text-brand-gold">•</span>
+              <span className="text-brand-gold">*</span>
             </React.Fragment>
           ))}
         </div>
