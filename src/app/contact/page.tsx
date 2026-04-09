@@ -224,7 +224,7 @@ export default function ContactPage() {
               >
                 jo@thebrandspine.com
               </a>
-              <span className="text-gray-500 hidden md:block">ÃÂ·</span>
+              <span className="text-gray-500 hidden md:block">*</span>
               <a
                 href="mailto:brett@thebrandspine.com"
                 className="text-[#c9a96e] hover:underline font-medium"
