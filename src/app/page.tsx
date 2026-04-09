@@ -99,7 +99,7 @@ export default function Home() {
 
       <AnimatedSection className="section-container section-spacing">
         <div className="max-w-4xl">
-          <SectionHeading eyebrow="THE FOUNDATION" title=""Identity Infrastructure Is the Governing Logic Behind How You Lead" />
+          <SectionHeading eyebrow="THE FOUNDATION" title="Identity Infrastructure Is the Governing Logic Behind How You Lead" />
 
           <div className="space-y-6 text-neutral-300 leading-relaxed">
             <p>
@@ -129,7 +129,7 @@ export default function Home() {
         <div className="absolute inset-0 bg-gradient-to-b from-neutral-900/50 to-neutral-950/50 pointer-events-none -mx-container-padding" />
 
         <div className="relative z-10 max-w-4xl">
-          <SectionHeading eyebrow="THE PROBLEM" title=""Drift Is the Silent Cost of Scaling Without Structure" />
+          <SectionHeading eyebrow="THE PROBLEM" title="Drift Is the Silent Cost of Scaling Without Structure" />
 
           <div className="space-y-6 text-neutral-300 leading-relaxed">
             <p>
@@ -152,7 +152,7 @@ export default function Home() {
       </AnimatedSection>
 
       <AnimatedSection className="section-container section-spacing">
-        <SectionHeading eyebrow="THE SYSTEM" title=""How We Build It" className="mb-16" />
+        <SectionHeading eyebrow="THE SYSTEM" title="How We Build It" className="mb-16" />
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           <GlassCard className="p-8 flex flex-col h-full">
@@ -195,7 +195,7 @@ export default function Home() {
       <AnimatedSection className="section-container section-spacing">
         <SectionHeading
           eyebrow="THE PROCESS"
-          title=""Four Phases. One Governing Document. One Operating System."
+          title="Four Phases. One Governing Document. One Operating System."
           className="mb-12"
         />
 
