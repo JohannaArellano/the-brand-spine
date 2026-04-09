@@ -139,7 +139,7 @@ const QUESTIONS: Question[] = [
     ],
     answers: [
       { position: 'Sovereign', friction: 'friction' },
-      { position: 'Partner', friction: 'effective' },
+      { position: 'Partner', friction: 'efficiency' },
       { position: 'Influencer', friction: 'calibrated' },
       { position: 'Subordinate', friction: 'strategic' },
     ],
