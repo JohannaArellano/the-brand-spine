@@ -2,6 +2,7 @@
 
 import React, { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
+import { faqSchema } from "@/lib/schema";
 // Inline Plus icon to avoid external dependency
 function PlusIcon({ className, strokeWidth = 1.5 }: { className?: string; strokeWidth?: number }) {
   return (
@@ -25,7 +26,12 @@ export default function FAQ({ faqs }: FAQProps) {
   const [openIndex, setOpenIndex] = useState<number | null>(null);
 
   return (
-    <div className="space-y-4">
+<>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema(faqs)) }}
+      />
+      <div className="space-y-4">
       {faqs.map((faq, index) => (
         <div
           key={index}
@@ -69,5 +75,6 @@ export default function FAQ({ faqs }: FAQProps) {
         </div>
       ))}
     </div>
+    </>
   );
 }
