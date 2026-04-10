@@ -18,11 +18,11 @@ export default function Navbar() {
   }, []);
 
   const navLinks = [
-    { href: '#process', label: 'Process' },
-    { href: '#services', label: 'Services' },
-    { href: '#brandos', label: 'BrandOS' },
-    { href: '#insights', label: 'Insights' },
-    { href: '#about', label: 'About' },
+    { href: '/process', label: 'Process' },
+    { href: '/services', label: 'Services' },
+    { href: '/brandos', label: 'BrandOS' },
+    { href: '/insights', label: 'Insights' },
+    { href: '/about', label: 'About' },
   ];
 
   return (
