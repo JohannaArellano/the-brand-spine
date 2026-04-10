@@ -4,17 +4,17 @@ export default function Footer() {
   const currentYear = new Date().getFullYear();
 
   const navigationLinks = [
-    { href: '#process', label: 'Process' },
-    { href: '#services', label: 'Services' },
-    { href: '#brandos', label: 'BrandOS' },
-    { href: '#insights', label: 'Insights' },
-    { href: '#about', label: 'About' },
+    { href: '/process', label: 'Process' },
+    { href: '/services', label: 'Services' },
+    { href: '/brandos', label: 'BrandOS' },
+    { href: '/insights', label: 'Insights' },
+    { href: '/about', label: 'About' },
   ];
 
   const resourceLinks = [
-    { href: '#assessment', label: 'Governance Assessment' },
-    { href: '#insights', label: 'Insights' },
-    { href: '#process', label: 'Process' },
+    { href: '/assessment', label: 'Governance Assessment' },
+    { href: '/insights', label: 'Insights' },
+    { href: '/process', label: 'Process' },
   ];
 
   return (
