@@ -293,7 +293,7 @@ export default function AssessmentPage() {
         <AnimatedSection>
           <div className="max-w-3xl mx-auto">
             <div className="mb-16">
-              <SectionHeading>Where Is Your Governance Leaking?</SectionHeading>
+              <SectionHeading>Where Does Your Governance Break Down?</SectionHeading>
               <p className="text-lg text-gray-300 mt-6 leading-relaxed">
                 Most leaders enforce the same way in every relationship. That works until it doesn't. This 6-minute assessment shows you where the friction lives.
               </p>
