@@ -378,8 +378,25 @@ export default function ResultsPage() {
 
   const handleReportRequest = (e: React.FormEvent) => {
     e.preventDefault();
-    // TODO: Integration point — send email + first name to email service
     setReportRequested(true);
+
+    // Send lead data to Google Sheets webhook
+    const posture = results?.dominantPosture || '';
+    const investmentSignal = results?.q11 || '';
+    fetch('https://script.google.com/macros/s/AKfycbz_GMuN1TWgiPPv5dAoGaW1AQs7NrRisXlhOsUBDBguZDi5ZY2ibyzo4Hy4hJKtKHzVjA/exec', {
+      method: 'POST',
+      mode: 'no-cors',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({
+        firstName: firstNameForReport,
+        email: emailForReport,
+        posture,
+        investmentSignal,
+      }),
+    }).catch(() => {
+      // Silently fail — don't block the user experience
+    });
+
     setTimeout(() => {
       setReportReady(true);
     }, 2000);
