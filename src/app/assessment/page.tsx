@@ -124,7 +124,7 @@ const QUESTIONS: Question[] = [
       { position: 'Sovereign', friction: 'friction' },
       { position: 'Partner', friction: 'overcorrecting' },
       { position: 'Influencer', friction: 'aligned' },
-      { position: 'Subordinate', friction: 'compliant' },
+      { position: 'Subordinate', friction: 'compliance' },
     ],
   },
   {
@@ -139,7 +139,7 @@ const QUESTIONS: Question[] = [
     ],
     answers: [
       { position: 'Sovereign', friction: 'friction' },
-      { position: 'Partner', friction: 'efficiency' },
+      { position: 'Partner', friction: 'effective' },
       { position: 'Influencer', friction: 'calibrated' },
       { position: 'Subordinate', friction: 'strategic' },
     ],
@@ -195,23 +195,16 @@ const QUESTIONS: Question[] = [
       { label: 'Not sure. I would need to see it in practice.', value: 'D' },
     ],
   },
-  {
-    id: 12,
-    section: 'contact',
-    text: 'Let us know where to send your Governance Friction Report.',
-  },
 ];
 
 export default function AssessmentPage() {
   const router = useRouter();
   const [currentQuestion, setCurrentQuestion] = useState(0);
   const [responses, setResponses] = useState<Record<number, string | string[]>>({});
-  const [contactData, setContactData] = useState({ firstName: '', lastName: '', email: '', company: '' });
   const [isStarted, setIsStarted] = useState(false);
   const [showErrors, setShowErrors] = useState(false);
 
   const question = QUESTIONS[currentQuestion];
-  const isContact = question.section === 'contact';
   const isDiagnostic = question.section === 'diagnostic';
   const isLast = currentQuestion === QUESTIONS.length - 1;
   const progress = ((currentQuestion + 1) / QUESTIONS.length) * 100;
@@ -232,12 +225,7 @@ export default function AssessmentPage() {
   };
 
   const handleNext = () => {
-    if (isContact) {
-      if (!contactData.firstName || !contactData.lastName || !contactData.email) {
-        setShowErrors(true);
-        return;
-      }
-    } else if (!responses[question.id]) {
+    if (!responses[question.id]) {
       setShowErrors(true);
       return;
     }
@@ -276,7 +264,6 @@ export default function AssessmentPage() {
       q9: responses[9],
       q10: responses[10],
       q11: responses[11],
-      contact: contactData,
     };
 
     // Store in localStorage for results page
@@ -295,7 +282,7 @@ export default function AssessmentPage() {
             <div className="mb-16">
               <SectionHeading>Where Does Your Governance Break Down?</SectionHeading>
               <p className="text-lg text-gray-300 mt-6 leading-relaxed">
-                Most leaders enforce the same way in every relationship. That works until it doesn't. This 6-minute assessment shows you where the friction lives.
+                Most leaders enforce the same way in every relationship. That works until it doesn&apos;t. This 6-minute assessment shows you where the friction lives.
               </p>
             </div>
 
@@ -377,59 +364,7 @@ export default function AssessmentPage() {
             exit={{ opacity: 0, y: -20 }}
             transition={{ duration: 0.3 }}
           >
-            {isContact ? (
-              // Contact Form
-              <div>
-                <h2 className="text-2xl sm:text-3xl font-bold mb-8">{question.text}</h2>
-                <GlassCard className="p-8 space-y-4">
-                  <div>
-                    <label className="block text-sm font-medium mb-2">First Name *</label>
-                    <input
-                      type="text"
-                      value={contactData.firstName}
-                      onChange={(e) => setContactData({ ...contactData, firstName: e.target.value })}
-                      className="w-full px-4 py-2 bg-white/5 border border-white/10 rounded-lg text-white placeholder-gray-500 focus:outline-none focus:border-[#c9a96e]"
-                      placeholder="First name"
-                    />
-                  </div>
-                  <div>
-                    <label className="block text-sm font-medium mb-2">Last Name *</label>
-                    <input
-                      type="text"
-                      value={contactData.lastName}
-                      onChange={(e) => setContactData({ ...contactData, lastName: e.target.value })}
-                      className="w-full px-4 py-2 bg-white/5 border border-white/10 rounded-lg text-white placeholder-gray-500 focus:outline-none focus:border-[#c9a96e]"
-                      placeholder="Last name"
-                    />
-                  </div>
-                  <div>
-                    <label className="block text-sm font-medium mb-2">Email *</label>
-                    <input
-                      type="email"
-                      value={contactData.email}
-                      onChange={(e) => setContactData({ ...contactData, email: e.target.value })}
-                      className="w-full px-4 py-2 bg-white/5 border border-white/10 rounded-lg text-white placeholder-gray-500 focus:outline-none focus:border-[#c9a96e]"
-                      placeholder="your@email.com"
-                    />
-                  </div>
-                  <div>
-                    <label className="block text-sm font-medium mb-2">Company or Organization (optional)</label>
-                    <input
-                      type="text"
-                      value={contactData.company}
-                      onChange={(e) => setContactData({ ...contactData, company: e.target.value })}
-                      className="w-full px-4 py-2 bg-white/5 border border-white/10 rounded-lg text-white placeholder-gray-500 focus:outline-none focus:border-[#c9a96e]"
-                      placeholder="Your company"
-                    />
-                  </div>
-                  {showErrors && (
-                    <p className="text-sm text-red-400">Please fill in all required fields.</p>
-                  )}
-                </GlassCard>
-              </div>
-            ) : (
-              // Multiple Choice
-              <div>
+            <div>
                 <h2 className="text-2xl sm:text-3xl font-bold mb-8">{question.text}</h2>
                 <div className="space-y-4">
                   {question.options?.map((option) => {
@@ -458,7 +393,6 @@ export default function AssessmentPage() {
                   <p className="text-sm text-red-400 mt-4">Please select an option to continue.</p>
                 )}
               </div>
-            )}
           </motion.div>
         </AnimatePresence>
 
@@ -475,7 +409,7 @@ export default function AssessmentPage() {
             onClick={handleNext}
             className="ml-auto px-6 py-2 bg-[#c9a96e] text-[#0a0a0a] font-semibold rounded-lg hover:bg-[#d4b276] transition-colors"
           >
-            {isLast ? 'Get Your Governance Friction Report' : 'Next'}
+            {isLast ? 'See Your Results' : 'Next'}
           </button>
         </div>
       </div>
